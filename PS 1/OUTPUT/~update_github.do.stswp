@@ -33,7 +33,6 @@ predict se_trainre78, stdp
 
 *We can observe that the coefficient of the treatment group on our outcome variable of interest re78 (real salaries in $) is positive and significant and its difference compared to the control group is of 1.79 rounded down. The constant term represents the coefficient of the control group, the people who did not receive the treatment and again it is significant at any confidence level.\\
 
-regress re78 train 
 outreg2 using TABLE_2.doc, replace
 regress re78 train age educ black hisp
 outreg2 using TABLE_2.doc, replace
