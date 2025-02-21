@@ -1,0 +1,29 @@
+cd "C:\Users\jacop\OneDrive - Università Commerciale Luigi Bocconi\Documenti\GitHub\Microeconometrics\PS 1\OUTPUT"
+
+save "jtrain2", replace
+
+shell git add .
+
+shell git commit -m "Auto update: Latest changes from Stata"
+
+shell git push origin main
+
+
+*We will run different balance tests for the given covariates: age educ black hisp nodegree re74 re75.\\ In order to understand the balance between the treatment and control groups for these different regressors we need to look at the p-value for the t ratio of interest which analyses under the null the hypothesis of no significant difference between the two coefficients computed from the two groups (treatment and control).\\
+
+ttest age, by(train)
+
+ttest educ, by(train)
+
+ttest black, by(train)
+
+ttest hisp, by(train)
+
+ttest nodegree, by(train)
+
+ttest re74, by(train)
+
+ttest re75, by(train)
+
+
+
