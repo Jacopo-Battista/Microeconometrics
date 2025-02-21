@@ -40,3 +40,4 @@ regress re78 train age educ black hisp
 outreg2 using TABLE_2.doc, replace
 regress re78 train age educ black hisp re74 re75
 outreg2 using TABLE_2.doc, replace
+outreg2 using TABLE_2.xlsx, replace ex
