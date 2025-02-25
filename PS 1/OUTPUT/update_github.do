@@ -6,7 +6,9 @@ save "C:\Users\jacop\OneDrive - Università Commerciale Luigi Bocconi\Documenti\
 
 // Push changes to GitHub
 
-shell git add .
+shell git add "PS 1/OUTPUT/jtrain2_modified.dta"
+
+shell git add "PS 1/OUTPUT/update_github.do"
 
 shell git commit -m "Auto update: Latest changes from Stata"
 
